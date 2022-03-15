@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Store</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark animate__animated animate__backInLeft">
+            <div class="container-fluid">
+              <a class="navbar-brand" id="tituloMenu" href="#">LIBRERÍA VIDA</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Dropdown
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled">Disabled</a>
+                  </li>
+                </ul>
+                <form class="d-flex">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+    </header>
+
+    <main>
+        <img src="img/foto1.jpg" alt="Foto Libro" class="img-fluid w-100 animate__animated animate__flash" id="fotoPrueba"> 
+    </main>
+
+    <section>
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-8 align-self-center">
+                    <h4>Inspirate y vive la mejor experiencia con nosotros</h4>
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae sunt dolores dicta eaque libero modi magnam! Expedita, ducimus incidunt neque pariatur ullam eligendi praesentium commodi porro vero accusantium sit eos?
+                    </p>
+                    <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                        Registrate
+                      </button>
+
+                </div>
+
+                <div class="col-4">
+                    <img src="img/foto2.png" alt="Foto2" class="img-fluid w-100">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="fondomovil">
+    </section>
+
+    <section>
+      <div class="container mt-5 mb-5">
+        <div class="row">
+          <div class="col-12">
+            <h3>Book</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia tempora velit aut dolores, minima quasi expedita veniam voluptas sed saepe debitis mollitia, facilis magnam accusamus veritatis cum quis? Aspernatur nostrum, minima repudiandae iusto et qui aliquid, ad at iure ab magni tempore delectus officiis nulla sint possimus, eius maiores? Sequi facilis sint, quia velit, pariatur deleniti temporibus ad alias dolore sunt necessitatibus consequuntur maxime voluptatem autem architecto atque neque odio minus eveniet! Non sequi quia omnis assumenda perferendis cupiditate in ullam provident? Recusandae, placeat dolorum ex eius, perferendis, eligendi molestiae magni nostrum neque temporibus impedit ducimus dignissimos? Minima maxime voluptatum magni, tenetur officia excepturi doloremque quo adipisci a voluptatem nulla? Voluptate exercitationem debitis nulla incidunt amet aliquam dolorum! Vel, nihil. Fugiat rem dolor illum esse doloremque eveniet cupiditate excepturi, porro quo, ut magni, harum provident odio quae facilis obcaecati ea at! Deleniti labore a, voluptatibus enim placeat hic! Fugiat architecto iure porro adipisci earum tenetur et, nam consequuntur animi eius nostrum ea ut aut repudiandae dicta magnam quis fugit numquam maiores? Sunt, iure nisi. Temporibus earum nam eveniet est ducimus. Voluptas adipisci cupiditate hic ad, recusandae placeat numquam, aut culpa accusamus harum illum minus officia error, totam saepe laborum corrupti?</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="con">
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <div>
+                Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
+              </div>
+              <div class="dropdown mt-3">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown">
+                  Dropdown button
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+    </section>    
+    
+    <section>
+      <button type="button" class="btn btn-primary" id="boton">Haga clic</button>
+    </section>
+    
+        <section class="fondomovil">
+        </section>
+        
+    <section class="con">
+      <div class="container mt-5">
+        <div class="row">
+          <div class="col-1">
+            <img src="img/foto4.png" alt="Foto4" class="img-fluid w-100">
+          </div>
+
+          <div class="col-5 align-self-center">
+            <h3 id="contacto">Contactanos</h3><br>
+            <p>Correo Electronico: paola23710@gmail.com</p>
+            <p>Telefono: 301-697-1293</p>
+            <p>Facebook: Librearia Vida</p>
+            <p>Instagram: @Librearia_Vida</p>
+            <p>Dirección: Cl. 49 ##41-9, Medellín, Antioquia</p>
+          </div>
+
+            <div class="col-6 align-self-center">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.140575193106!2d-75.5640742862437!3d6.245198595479452!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e442859d833cfa3%3A0xa3fca5c91547777f!2sCESDE.!5e0!3m2!1ses!2sco!4v1645842821272!5m2!1ses!2sco"
+                width="400" height="200" style="border:0;" allowfullscreen="" loading="lazy">
+              </iframe>
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="js/llenadoTienda.js"></script>
+
+</body>
+</html>

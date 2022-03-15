@@ -1,0 +1,17 @@
+.fondomovil{
+    background-image: url(img/foto5.jpg);
+    background-attachment: fixed;
+    height: 400px;
+}
+
+.con{
+    font-family: "Helvetica Neue";
+    font-size: 16px;
+    background-color: moccasin;
+
+}
+
+.navbar-brand{
+    font-family: 'Times New Roman';
+    font-size: 20px;
+}
