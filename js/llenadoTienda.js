@@ -50,7 +50,7 @@ productos.forEach(function(producto){
 
     //2. pintando etiquetas
 
-    //div con la clase col
+    //div con la clase col -- creo columnas
     let columna=document.createElement("div")
     columna.classList.add("col")
 
@@ -84,3 +84,4 @@ boton.setAttribute("type","button")
 boton.classList.add("btn","btn-info", "mx-4","mb-4")
 boton.textContent="Ver productos"
 
+}
