@@ -9,7 +9,7 @@ pintarTienda();
 //llamando al modulo ampliarinfo
 let contenedorTienda = document.getElementById("fila1");
 
-contenedorTienda.addEventListener("click", function (btn) {
+contenedorTienda.addEventListener("click", function (event) {
   let modalinfoproducto = new bootstrap.Modal(document.getElementById("modalinfoproducto"));
   ampliarInformacion(event);
   modalinfoproducto.show();
