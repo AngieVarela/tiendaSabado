@@ -13,11 +13,6 @@ export function pintarTienda() {
     { nombre: "Sugeta líbros", precio: 50000, foto: "../img/tienda8.jpg", descripcion: "Son regalos originales y útiles que sirven para decorar la habitación o estantería con tus libros." },
     { nombre: "Cojín de lectura", precio: 120000, foto: "../img/tienda9.jpg", descripcion: "Son mucho mejores que usar un cabecera para leer en la cama, pues no se deforman y hacen que la posición de la espalda sea mucho más ergonómica"},
     { nombre: "Ebook", precio: 60.0, foto: "../img/tienda10.png", descripcion: "Libros electronicos" },
-  ]
-
-  /*LIBROS*/
-
-  let libros = [
     { nombre: "Hush Hush", precio: 45000, foto: "../img/libro1.jpg", descripcion: "Aneles caidos, nefilim y humanos" },
     { nombre: "El color del imperio", precio: 60000, foto: "../img/libro2.jpg", descripcion: "El secreto del color más maravilloso que jamás ha sido capaz de crear la humanidad" },
     { nombre: "Mil veces hasta siempre", precio: 50000, foto: "../img/libro3.jpg", descripcion: "Una brillante historia sobre el amor, la resiliencia y el poder de la amistad para toda la vida" },
@@ -28,6 +23,12 @@ export function pintarTienda() {
     { nombre: "El caballero de la armadura oxidada", precio: 45000, foto: "../img/libro8.jpg", descripcion: " Sus profundas enseñanzas éticas son de una sencillez y humildad tal que se consiguen interiorizar naturalmente y la riqueza de su prosa nos inunda de belleza" },
     { nombre: "La teoria del caos", precio: 60000, foto: "../img/libro9.png", descripcion: "La teoría de la relatividad y la mecánica cuántica" },
     { nombre: "Galletas", precio: 50000, foto: "../img/libro10.jpg", descripcion: "Recetas de libros" }
+  ]
+
+  /*LIBROS*/
+
+  let libros = [
+    
   ]
 
   //Necesito recorrer un arreglo en JS

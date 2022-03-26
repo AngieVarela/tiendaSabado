@@ -14,7 +14,7 @@ export function ampliarInformacion(event) {
     //console.log(producto);
 
     //asociando valores respectivos al modal
-    let foto = document.getElementById("fotoinfo")
+    let foto = document.getElementById("fotoinfo") //traer la informacion del modal y pintar
     foto.src = producto.foto
 
     let nombre = document.getElementById("nombreinfo")
@@ -25,9 +25,11 @@ export function ampliarInformacion(event) {
 
     let descripcion = document.getElementById("descripcioninfo")
     descripcion.textContent = producto.descripcion
+
+    return producto
   }
 
-  /*LIBROS*/
+  /*LIBROS
   let libro = {}
   if (event.target.classList.contains("btn")) {
     libro = {
@@ -49,5 +51,9 @@ export function ampliarInformacion(event) {
 
     let descripcion = document.getElementById("descripcioninfoL");
     descripcion.textContent = producto.descripcion;
-  }
+  }*/
+
+
+
+
 }
