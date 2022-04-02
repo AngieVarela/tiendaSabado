@@ -53,7 +53,7 @@
              <!-- Boton de carrito -->
             <ul class="navbar-nav mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">
+                <a class="nav-link active" aria-current="page" href="#" id="botoncarrito">
                   <i class="bi bi-cart4 icono"></i>
                   <span id="capsula" class="position-absolute stop-10 start-10 translate-middle badge rounded-pill bg-danger invisible">
                     99+
@@ -71,7 +71,7 @@
       <div class="container mt-5">
         <div class="row">
           <div class="col-8 align-self-center">
-            <h4>❤Elige el producto que desees, !todo te va a encantar!❤</h4>
+            <h4>❤Elige el producto que desees !todo te va a encantar!❤</h4>
             <p>
               Encuentra en nuestra tienda los mejores articulos y libros para ti como lector; tenemos desde lo mas comodo, hasta los libros mas exclusivos que encontraras; incluso puedes darlos como
               obsequio 🤭
@@ -93,6 +93,8 @@
       <div class="container">
         <div class="row row-cols-1 row-cols-md-5 g-4" id="fila1"></div>
       </div>
+
+      <!-- Modal 1 -->
       <section>
         <div class="modal fade" id="modalinfoproducto" tabindex="-1">
           <div class="modal-dialog">
@@ -113,7 +115,7 @@
                       <p class="text-center" id="descripcioninfo"></p>
                       <div class="mb-3">
                         <label for="exampleInputPassword1" class="form-label">cantidad</label>
-                        <input type="number" class="form-control" id="cantidad">
+                        <input type="number" value="1" class="form-control" id="cantidad">
                       </div>
                     </div>
                   </div>
@@ -129,44 +131,21 @@
         </div>
       </section>
 
-      <!-- parte de libros-->
-      <section class="mt-5">
-        <div class="container mt-5">
-          <div class="row">
-            <div class="col-8 align-self-center">
-              <h4>📚Nuestros libros</h4>
-              <br />
-            </div>
-          </div>
-        </div>
-
-        <div class="container">
-          <div class="row row-cols-1 row-cols-md-5 g-4" id="fila2"></div>
-        </div>
-        <div class="modal fade" id="modalinfolibro" tabindex="-1">
+      <!-- Modal 2 -->
+      <section>
+        <div class="modal fade" id="resumenventa" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
           <div class="modal-dialog">
             <div class="modal-content">
               <div class="modal-header">
-                <h5 class="modal-title">Libro</h5>
+                <h5 class="modal-title" id="exampleModalLabel">Tienda</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div class="modal-body">
-                <div class="container">
-                  <div class="row">
-                    <div class="col-4">
-                      <img src="" alt="" class="img-fluid w-100" id="fotoinfoL" />
-                    </div>
-                    <div class="col-8">
-                      <h3 class="text-center" id="nombreinfoL"></h3>
-                      <h4 class="text-center" id="precioinfoL"></h4>
-                      <p class="text-center" id="descripcioninfoL"></p>
-                    </div>
-                  </div>
-                </div>
+                <div class="container" id="contenedorventa"></div>
               </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                <button type="button" class="btn btn-primary">Añadir al carrito</button>
+                <button type="button" class="btn btn-primary">Comprar</button>
               </div>
             </div>
           </div>
