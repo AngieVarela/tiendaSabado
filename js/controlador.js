@@ -95,12 +95,17 @@ botonCarrito.addEventListener("click",function(event){
   precio.classList.add("text-center")
   precio.textContent=producto.precio
 
+  let total=document.createElement("h6")
+  total.classList.add("text-center")
+  total.textContent=producto.total
+
 
   //PADRES E HIJOS
   columna1.appendChild(foto)
   columna2.appendChild(nombre)
   columna2.appendChild(cantidad)
   columna2.appendChild(precio)
+  columna2.appendChild(total)
 
   fila1.appendChild(columna1)
   fila1.appendChild(columna2)
