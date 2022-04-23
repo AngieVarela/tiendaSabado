@@ -87,7 +87,7 @@
                     ¿Quieres ser parte de nosotros?, tenemos lo que necesitas, unete y agrega los productos que mas te gusten.<br><br>
                   </div>
                   
-                    <form>
+                    <form id="formularioderegistro">
 
                       <div class="mb-3">
                         <label class="form-label">correo</label>
@@ -156,6 +156,26 @@
         </div>
       </div>
   </footer>
+
+  <!-- Modal -->
+  <section>
+<div class="modal fade" id="modalinformativo" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Tienda Readers</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p id="informacióngeneral"></p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+  </section>
 
   <script src="js/firebase.js" type="module"></script>
   <script src="js/registro.js" type="module"></script>
