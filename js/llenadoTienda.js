@@ -72,8 +72,8 @@ export function pintarTienda() {
     fila1.appendChild(columna)
     tarjeta.appendChild(titulo)
     tarjeta.appendChild(foto)
-    tarjeta.appendChild(precio)
     tarjeta.appendChild(descripcion)
+    tarjeta.appendChild(precio)
     tarjeta.appendChild(boton)
 
   })

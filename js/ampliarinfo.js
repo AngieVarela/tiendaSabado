@@ -28,32 +28,4 @@ export function ampliarInformacion(event) {
 
     return producto
   }
-
-  /*LIBROS
-  let libro = {}
-  if (event.target.classList.contains("btn")) {
-    libro = {
-      foto: event.target.parentElement.querySelector("img").src,
-      nombre: event.target.parentElement.querySelector("h4").textContent,
-      precio: event.target.parentElement.querySelector("h5").textContent,
-      descripcion: event.target.parentElement.querySelector("p").textContent,
-    };
-
-    //asociando valores respectivos al modal
-    let foto = document.getElementById("fotoinfoL");
-    foto.src = libro.foto;
-
-    let nombre = document.getElementById("nombreinfoL");
-    nombre.textContent = libro.nombre;
-
-    let precio = document.getElementById("precioinfoL");
-    precio.textContent = libro.precio;
-
-    let descripcion = document.getElementById("descripcioninfoL");
-    descripcion.textContent = producto.descripcion;
-  }*/
-
-
-
-
 }

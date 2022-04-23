@@ -38,16 +38,6 @@
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
               </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Descubre más </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="tienda.html">Tienda</a></li>
-                  <li><a class="dropdown-item" href="#">Otra accion</a></li>
-                  <li>
-                    <hr class="dropdown-divider" />
-                  </li>
-                </ul>
-              </li>
             </ul>
 
              <!-- Boton de carrito -->
@@ -89,12 +79,11 @@
           </div>
         </div>
       </div>
-
       <div class="container">
         <div class="row row-cols-1 row-cols-md-5 g-4" id="fila1"></div>
       </div>
 
-      <!-- Modal 1 -->
+      <!-- Modal 1 productos-->
       <section>
         <div class="modal fade" id="modalinfoproducto" tabindex="-1">
           <div class="modal-dialog">
@@ -110,9 +99,10 @@
                       <img src="" alt="" class="img-fluid w-100" id="fotoinfo" />
                     </div>
                     <div class="col-8">
-                      <h3 class="text-center" id="nombreinfo"></h3>
-                      <h4 class="text-center" id="precioinfo"></h4>
+                      <h5 class="text-center" id="nombreinfo"></h5>
                       <p class="text-center" id="descripcioninfo"></p>
+                      <h5 class="text-center" id="precioinfo"></h5>
+                      
                       <div class="mb-3">
                         <label for="exampleInputPassword1" class="form-label">cantidad</label>
                         <input type="number" value="1" class="form-control" id="cantidad">
@@ -123,7 +113,6 @@
               </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                <button id="botonlimp" type="button" class="btn btn-secondary" data-bs-dismiss="modal">Limpiar</button>
                 <button id="botonAdd" type="button" class="btn btn-primary">Añadir al carrito</button>
               </div>
             </div>
@@ -131,20 +120,21 @@
         </div>
       </section>
 
-      <!-- Modal 2 -->
+      <!-- Modal 2 Carrito de compras-->
       <section>
         <div class="modal fade" id="resumenventa" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
           <div class="modal-dialog">
             <div class="modal-content">
               <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Tienda</h5>
+                <h5 class="modal-title" id="exampleModalLabel">Carrito de compras</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div class="modal-body">
                 <div class="container" id="contenedorventa"></div>
               </div>
               <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar carrito</button>
+                <button id="botonlimp" type="button" class="btn btn-secondary" data-bs-dismiss="modal">Limpiar carrito</button>
                 <button type="button" class="btn btn-primary">Comprar</button>
               </div>
             </div>

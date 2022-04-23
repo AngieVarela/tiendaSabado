@@ -43,6 +43,15 @@ boton.addEventListener('click', function(event){
   pintarCarrito(suma);
   modalinfoproducto.hide();
 
+  /*5.calculo el subtotal de cantidad*precio
+  let subtotal=0
+  carrito.forEach(function (cantidad){
+    subtotal=cantidad*precio(cantidad.precio)
+  })
+
+  pintarCarrito(subtotal);
+  resumenventa.hide();*/
+
 })
 
 //boton de limpiar
