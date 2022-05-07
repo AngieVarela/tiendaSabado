@@ -43,15 +43,6 @@ boton.addEventListener('click', function(event){
   pintarCarrito(suma);
   modalinfoproducto.hide();
 
-  /*5.calculo el subtotal de cantidad*precio
-  let subtotal=0
-  carrito.forEach(function (cantidad){
-    subtotal=cantidad*precio(cantidad.precio)
-  })
-
-  pintarCarrito(subtotal);
-  resumenventa.hide();*/
-
 })
 
 //boton de limpiar
@@ -108,6 +99,15 @@ botonCarrito.addEventListener("click",function(event){
   total.classList.add("text-center")
   total.textContent=producto.total
 
+    //calculo el subtotal de cantidad*precio
+    /*let totall = 0
+    carrito.forEach(function (cantidad) {
+      subtotal = cantidad * producto(precio)
+      totall = subtotal,+ 
+    })
+
+    pintarCarrito(totall);
+    resumenventa.hide();  */
 
   //PADRES E HIJOS
   columna1.appendChild(foto)

@@ -1,5 +1,5 @@
 .fondomovil{
-    background-image: url(img/foto5.jpg);
+    background-image: url(img/foto6.jpg);
     background-attachment: fixed;
     height: 400px;
 }
@@ -27,4 +27,27 @@
 
 .encabezado{
     font-size: 25px;
+}
+
+.backgroundt{
+    background-image:url(img/fondotienda.jpg);
+}
+
+.parrafo{
+    font-size: 20px;
+    font-style:inherit ;
+    color: black;
+}
+
+.card-title{
+    font-family: "Times New Roman";
+    text-align: center;
+    border-style:dashed;
+    font-size: 25px;
+}
+
+.card-text{
+    font-style: italic;
+    font-family: "Helvetica Neue";
+    font-size: 20px;
 }

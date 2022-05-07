@@ -1,4 +1,4 @@
-export function pintarTienda() {
+  export function pintarTienda() {
   //arreglo de objetos
 
   //ARTICULOS

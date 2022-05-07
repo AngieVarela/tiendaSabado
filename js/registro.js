@@ -20,7 +20,7 @@ botonregistro.addEventListener("click",function(evento){
         let textoinformativo=document.getElementById("informaciongeneral")
         let formulario=document.getElementById("formularioderegistro")
         formulario.reset()
-        textoinformativo.textContent="Exito registrandote"
+        textoinformativo.textContent="REGISTRADO CORRECTAMENTE!!"
         modalInformativo.show()
         setTimeout(function(){
             modalInformativo.hide()
@@ -34,7 +34,9 @@ botonregistro.addEventListener("click",function(evento){
         let textoinformativo=document.getElementById("informaciongeneral")
         textoinformativo.textContent="Falla: "+errorMessage
         modalInformativo.show()
-        
+        setTimeout(function () {
+            modalInformativo.hide()
+        }, 2000);
     });
     
    
