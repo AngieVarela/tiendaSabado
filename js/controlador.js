@@ -57,6 +57,8 @@ botonl.addEventListener("click", function(event){
 //Ver resumen de venta
 let  botonCarrito = document.getElementById("botoncarrito")
 let modalVenta = new bootstrap.Modal(document.getElementById('resumenventa'))
+let subtotal=0
+
 
 botonCarrito.addEventListener("click",function(event){
 
@@ -68,6 +70,16 @@ botonCarrito.addEventListener("click",function(event){
 
   //recorrer el carrito para pintar los productos en la factura
   carrito.forEach(function(producto){
+    
+    let a=producto.cantidad
+    let b=producto.precio
+    let totalA=0
+    let totalB=0
+
+    //calculo el subtotal de cantidad*precio
+    subtotal=a*b
+    totalA=subtotal
+    totalB= totalA+totalB
 
     //TRAVERSING
   let fila1=document.createElement("div")
@@ -89,32 +101,25 @@ botonCarrito.addEventListener("click",function(event){
 
   let cantidad=document.createElement("h6")
   cantidad.classList.add("text-center")
-  cantidad.textContent=producto.cantidad
+  cantidad.textContent="Cantidad: "+producto.cantidad
 
-  let precio=document.createElement("h6")
-  precio.classList.add("text-center")
-  precio.textContent=producto.precio
+  // let precio=document.createElement("h6")
+  // precio.classList.add("text-center")
+  // precio.textContent=producto.precio
 
-  let total=document.createElement("h6")
-  total.classList.add("text-center")
-  total.textContent=producto.total
+  let tvtotal=document.createElement("h6")
+  tvtotal.classList.add("text-center")
+  tvtotal.textContent="Subtotal: "+totalB
 
-    //calculo el subtotal de cantidad*precio
-    /*let totall = 0
-    carrito.forEach(function (cantidad) {
-      subtotal = cantidad * producto(precio)
-      totall = subtotal,+ 
-    })
-
-    pintarCarrito(totall);
-    resumenventa.hide();  */
-
+  
   //PADRES E HIJOS
   columna1.appendChild(foto)
   columna2.appendChild(nombre)
   columna2.appendChild(cantidad)
-  columna2.appendChild(precio)
-  columna2.appendChild(total)
+  // columna2.appendChild(precio)
+  columna2.appendChild(tvtotal)
+
+  //columna2.appendChild(subtotal)
 
   fila1.appendChild(columna1)
   fila1.appendChild(columna2)
@@ -124,7 +129,5 @@ botonCarrito.addEventListener("click",function(event){
 
   modalVenta.show()
 
-
 })
-
 

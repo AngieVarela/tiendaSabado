@@ -8,7 +8,6 @@ export function ampliarInformacion(event) {
       foto:event.target.parentElement.querySelector("img").src,
       nombre:event.target.parentElement.querySelector("h4").textContent,
       precio:event.target.parentElement.querySelector("h5").textContent,
-      descripcion:event.target.parentElement.querySelector("p").textContent
     }
 
     //console.log(producto);
