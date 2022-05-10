@@ -9,19 +9,18 @@ let producto={}
 let modalinfoproducto = new bootstrap.Modal(document.getElementById("modalinfoproducto"))
 let totalventa = document.getElementById("contenedortotal")
 
-
 //llamando al modulo de pintar
 pintarTienda();
 
 //llamando al modulo ampliarinfo
-let contenedorTienda = document.getElementById("fila1");
+let contenedorTienda = document.getElementById("fila1")
 
 contenedorTienda.addEventListener("click", function (event) {
   if (event.target.classList.contains("btn")) {
-  producto=ampliarInformacion(event);
-  modalinfoproducto.show();
+  producto=ampliarInformacion(event)
+  modalinfoproducto.show()
   }
-});
+})
 
 let carrito=[]
 let boton = document.getElementById("botonAdd")
@@ -42,6 +41,13 @@ boton.addEventListener('click', function(event){
 
 })
 
+  //Devuelvo cantidad a 1
+  let limpiarInputNumber = document.getElementById("botonAdd");
+  let valor1 = document.getElementById("cantidad");
+  limpiarInputNumber.addEventListener('click', function (event) {
+    valor1.value = 1;
+})
+
 //boton de limpiar
 let botonl = document.getElementById("btnlimpiar")
 botonl.addEventListener("click", function(event){
@@ -52,18 +58,17 @@ botonl.addEventListener("click", function(event){
 
 })
 
-
 //Ver resumen de venta
 let botonCarrito = document.getElementById("botoncarrito")
 let modalVenta = new bootstrap.Modal(document.getElementById('resumenventa'))
 let totalA = 0
-let totalB = 0
-let subtotal = 0
+
+
 
 botonCarrito.addEventListener("click",function(event){
 
   let contenedor =document.getElementById("contenedorventa")
-
+  
   //Borrar el contenido HTML de una seccion
   contenedor.innerHTML=""
 
@@ -72,12 +77,14 @@ botonCarrito.addEventListener("click",function(event){
     
     let a=producto.cantidad
     let b=producto.precio
+    let subtotal = 0
+    let totalB = 0
 
     //calculo el subtotal de cantidad*precio
     subtotal=a*b
     totalA=subtotal
     totalB=totalA+totalB
-    totalventa.textContent = "Total venta: " +totalB;
+    totalventa.textContent = "Total venta: " + totalB;
 
     //TRAVERSING
   let fila1=document.createElement("div")
@@ -107,7 +114,7 @@ botonCarrito.addEventListener("click",function(event){
 
   let tvsubtotal=document.createElement("h6")
   tvsubtotal.classList.add("text-center")
-  tvsubtotal.textContent="Subtotal: "+totalB
+    tvsubtotal.textContent = "Subtotal: " + totalB
 
   //PADRES E HIJOS
   columna1.appendChild(foto)
