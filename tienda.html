@@ -19,7 +19,7 @@
     <header class="encabezado">
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark animate__animated animate__backInLeft">
         <div class="container-fluid">
-          <a class="navbar-brand" href="index.html"><img src="img/logo.png" alt="logo" class="img-fluid" width="30" height="24" /> Readers</a>
+          <a class="navbar-brand" href="index.html"><img src="img/logo.png" alt="logo" class="img-fluid" width="30" height="24" /> Store Readers</a>
 
           <button
             class="navbar-toggler"
@@ -61,7 +61,7 @@
       <div class="container mt-5">
         <div class="row">
           <div class="col-8 align-self-center">
-            <h3>❤Elige el producto que desees !todo te va a encantar!❤</h3>
+            <h3 class="titulot" >❤Elige el producto que desees !todo te va a encantar!❤</h3>
             <p class="parrafo">
               Encuentra en nuestra tienda los mejores articulos y libros para ti como lector; tenemos desde lo mas comodo, hasta los libros mas exclusivos que encontraras; incluso puedes darlos como
               obsequio 🤭
@@ -103,8 +103,9 @@
                       <p class="text-center" id="descripcioninfo"></p>
                       <h5 class="text-center" id="precioinfo"></h5>
                       
+                      <!--cantidad de productos-->
                       <div class="mb-3">
-                        <label for="exampleInputPassword1" class="form-label">cantidad</label>
+                        <label class="form-label">cantidad</label>
                         <input type="number" value="1" min="1" class="form-control" id="cantidad">
                       </div>
                     </div>
@@ -132,9 +133,21 @@
               <div class="modal-body">
                 <div class="container" id="contenedorventa"></div>
               </div>
+                <div class="modal-body2">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-4">
+                        <button id="btnconvertir" type="button" class="btnconver">Convertir $</button>
+                      </div>
+                      <div class="col-8">
+                        <div class="container2" id="contenedortotal"></div>
+                      </div>
+                    </div>
+                </div>
+              </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar carrito</button>
-                <button id="botonlimp" type="button" class="btn btn-secondary" data-bs-dismiss="modal">Limpiar carrito</button>
+                <button id="btnlimpiar" type="button" class="btn btn-secondary" data-bs-dismiss="modal">Limpiar carrito</button>
                 <button type="button" class="btn btn-primary">Comprar</button>
               </div>
             </div>
