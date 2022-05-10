@@ -60,15 +60,17 @@ botonl.addEventListener("click", function(event){
 
 //Ver resumen de venta
 let botonCarrito = document.getElementById("botoncarrito")
-let modalVenta = new bootstrap.Modal(document.getElementById('resumenventa'))
 let totalA = 0
 
 
 
 botonCarrito.addEventListener("click",function(event){
-
-  let contenedor =document.getElementById("contenedorventa")
   
+  let contenedor =document.getElementById("contenedorventa")
+  let modalVenta = new bootstrap.Modal(document.getElementById('resumenventa'))
+  
+  let subtotal = 0
+  let totalB = 0
   //Borrar el contenido HTML de una seccion
   contenedor.innerHTML=""
 
@@ -77,8 +79,6 @@ botonCarrito.addEventListener("click",function(event){
     
     let a=producto.cantidad
     let b=producto.precio
-    let subtotal = 0
-    let totalB = 0
 
     //calculo el subtotal de cantidad*precio
     subtotal=a*b
@@ -114,7 +114,7 @@ botonCarrito.addEventListener("click",function(event){
 
   let tvsubtotal=document.createElement("h6")
   tvsubtotal.classList.add("text-center")
-    tvsubtotal.textContent = "Subtotal: " + totalB
+    tvsubtotal.textContent = "Subtotal: " + totalA
 
   //PADRES E HIJOS
   columna1.appendChild(foto)
