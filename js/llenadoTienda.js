@@ -3,16 +3,16 @@
 
   //ARTICULOS
   let productos = [
-    { nombre: "Calienta tazas", precio: "35000", foto: "../img/tienda1.png", descripcion: "¿Quieres un calienta tazas USB para mantener siempre tu taza de café caliente?" },
-    { nombre: "Silla de lectura", precio: "30000", foto: "../img/tienda2.jpg", descripcion: "Comodo y compacto sillon de lectura con reposapies" },
+    { nombre: "Calienta tazas", precio: "40000", foto: "../img/tienda1.png", descripcion: "¿Quieres un calienta tazas USB para mantener siempre tu taza de café caliente?" },
+    { nombre: "Silla de lectura", precio: "100000", foto: "../img/tienda2.jpg", descripcion: "Comodo y compacto sillon de lectura con reposapies" },
     { nombre: "Atril de lectura", precio: "35000", foto: "../img/tienda3.jpg", descripcion: "Atril metalico para libros, ebooks, tablets, etc. con 6 angulos de inclinación" },
-    { nombre: "Soporte para gafas", precio: "30000", foto: "../img/tienda4.jpg", descripcion: "Gran regalo de soporte para gafas" },
-    { nombre: "Luz de cuello", precio: "93000", foto: "../img/tienda5.png", descripcion: "Se coloca en el cuello, varios niveles de intensidad, práctica y versátil" },
+    { nombre: "Soporte para gafas", precio: "25000", foto: "../img/tienda4.jpg", descripcion: "Gran regalo de soporte para gafas" },
+    { nombre: "Luz de cuello", precio: "70000", foto: "../img/tienda5.png", descripcion: "Se coloca en el cuello, varios niveles de intensidad, práctica y versátil" },
     { nombre: "Marca páginas", precio: "20000", foto: "../img/tienda7.png", descripcion: "Marcadores de paginas divertidos" },
-    { nombre: "Luz con pinza", precio: "90000", foto: "../img/tienda6.png", descripcion: "Con funcional pinza, 3 tonos de color y de brillo, 60 horas de batería" },
-    { nombre: "Cojín de lectura", precio: "120000", foto: "../img/tienda9.jpg", descripcion: "Son mucho mejores que usar un cabecera para leer en la cama, pues no se deforman y hacen que la posición de la espalda sea mucho más ergonómica"},
+    { nombre: "Luz con pinza", precio: "80000", foto: "../img/tienda6.png", descripcion: "Con funcional pinza, 3 tonos de color y de brillo, 60 horas de batería" },
+    { nombre: "Cojín de lectura", precio: "60000", foto: "../img/tienda9.jpg", descripcion: "Son mucho mejores que usar un cabecera para leer en la cama, pues no se deforman y hacen que la posición de la espalda sea mucho más ergonómica"},
     { nombre: "Sugeta líbros", precio: "50000", foto: "../img/tienda8.jpg", descripcion: "Son regalos originales y útiles que sirven para decorar la habitación o estantería con tus libros." },
-    { nombre: "Ebook", precio: "60000", foto: "../img/tienda10.png", descripcion: "Libros electronicos" },
+    { nombre: "Ebook", precio: "110000", foto: "../img/tienda10.png", descripcion: "Libros electronicos" },
     
     { nombre: "El color del imperio", precio: "60000", foto: "../img/libro2.jpg", descripcion: "El secreto del color más maravilloso que jamás ha sido capaz de crear la humanidad" },
     { nombre: "Hush Hush", precio: "45000", foto: "../img/libro1.jpg", descripcion: "Aneles caidos, nefilim y humanos" },

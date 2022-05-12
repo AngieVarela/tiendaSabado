@@ -48,21 +48,10 @@ boton.addEventListener('click', function(event){
     valor1.value = 1;
 })
 
-//boton de limpiar
-let botonl = document.getElementById("btnlimpiar")
-botonl.addEventListener("click", function(event){
-  carrito=[]
-  let capsula = document.getElementById("capsula")
-  capsula.textContent = 0
-  capsula.classList.add("invisible")
-
-})
 
 //Ver resumen de venta
 let botonCarrito = document.getElementById("botoncarrito")
 let totalA = 0
-
-
 
 botonCarrito.addEventListener("click",function(event){
   
@@ -84,7 +73,7 @@ botonCarrito.addEventListener("click",function(event){
     subtotal=a*b
     totalA=subtotal
     totalB=totalA+totalB
-    totalventa.textContent = "Total venta: " + totalB;
+    totalventa.textContent = "Total venta: " +totalB+" cop";
 
     //TRAVERSING
   let fila1=document.createElement("div")
@@ -132,11 +121,27 @@ botonCarrito.addEventListener("click",function(event){
 
   modalVenta.show()
 
-})
+  //boton de limpiar
+  let botonl = document.getElementById("btnlimpiar")
+  botonl.addEventListener("click", function (event) {
+    carrito = []
+    let capsula = document.getElementById("capsula")
+    capsula.textContent = 0
+    totalventa.textContent = ""
+    capsula.classList.add("invisible")
 
-let btnconver = document.getElementById("btnconvertir")
-btnconver.addEventListener('click', function (event) {
+  })
   
-
+  //Funcion BTN convertir a USD
+  let botonc = document.getElementById("btnconvertir")
+  botonc.addEventListener('click', function (event) {
+    
+    let usd = 4000
+    let convertir = 0
+    
+    convertir=totalA/usd
+    totalventa.textContent = "Total venta: " +convertir+" usd";
+    
+  })
+  
 })
-
